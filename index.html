@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Counter Tool</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Word Counter Tool</h1>
+
+    <textarea id="text" placeholder="Paste or type text here..."></textarea>
+
+    <div class="stats">
+        <div class="box">
+            <h2 id="wordCount">0</h2>
+            <p>Words</p>
+        </div>
+
+        <div class="box">
+            <h2 id="charCount">0</h2>
+            <p>Characters</p>
+        </div>
+
+        <div class="box">
+            <h2 id="paragraphCount">0</h2>
+            <p>Paragraphs</p>
+        </div>
+
+        <div class="box">
+            <h2 id="readingTime">0</h2>
+            <p>Reading Time (Min)</p>
+        </div>
+    </div>
+
+    <button onclick="copyText()">Copy Text</button>
+    <button onclick="clearText()">Clear Text</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
